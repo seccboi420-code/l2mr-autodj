@@ -17,7 +17,7 @@ desc      = getenv("STREAM_DESC", "AutoDJ via Railway")
 site_url  = getenv("STREAM_URL", "https://listen2myradio.com")
 
 # ---------- Music source ----------
-music = playlist(mode="random", reload=60, "/app/media")
+music = playlist(mode="random", reload=60, "/app/media/list.m3u")
 
 # Fallback if empty
 sil = blank(duration=30.)
